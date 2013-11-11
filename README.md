@@ -1,7 +1,9 @@
 memorygame
 ==========
 
-A simple HTML5 memory game using CSS3 animations
+A simple HTML5 memory game using CSS3 animations.
+
+Game playable at [http://andrewtavis.com/memory/](http://andrewtavis.com/memory/)
 
 This game is a result of a test exercise. It took me 2 hours to complete this project. The parameters were as follows:
 
