@@ -1,0 +1,78 @@
+body { font-family: cursive; color: #eee; text-align: center }
+#outside { margin: 10px auto; width: 1100px; }
+#header { height: 150px; font-size: 96px; font-weight: bold; }
+
+#middle { height: 600px; background-color:#c00; }
+#gameContainer { float: left; width: 800px; height: 600px; background-color:#b5bbdf; }
+#cardContainer { width: 600px; height: 600px; margin: 0px auto; }
+#sidebar { float: right; width: 300px; height: 600px; background-color:#b5bbdf; }
+
+#footer { height: 100px; clear:all; line-height: 60px; }
+
+h2 { font-size: 36px; margin: 5px; }
+#timer { text-align: center; font-size: 96px; margin-bottom: 50px; }
+#playerErrors { text-align: center; font-size: 96px; }
+
+/************ GAME CARD ELEMENTS ***********/
+.gameCard {
+	width: 150px; 
+	height: 150px; 
+	float: left; 
+}
+.flipper {
+	width: 150px; 
+	height: 150px; 
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+	overflow:visible;
+}
+/* flip the card */
+.flipper.flipped {
+	transform: rotateY(180deg);
+	-webkit-transform:rotateY(180deg); 
+}
+.cardFront, .cardBack {
+	width: 150px;
+	height: 150px; 
+	background-image: url('regularshow-sprite.jpg');
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	
+}
+.cardFront {
+	transform: rotateY(180deg);
+	-webkit-transform:rotateY(180deg); 
+	-moz-transform:rotateY(180deg); 
+}
+.cardBack { 
+	z-index: 2;
+	-webkit-transform:rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+	background-position: 0px 0px;
+}
+/************ END GAME CARD ELEMENTS ***********/
+
+
+
+/************ GRADIENTS ************/
+#header {
+  background-color: #b5bbdf; /* fallback */
+  background: -webkit-linear-gradient(top, #7373ff, #b5bbdf);
+  background: -moz-linear-gradient(top, #7373ff, #b5bbdf);
+  background: -ms-linear-gradient(top, #7373ff, #b5bbdf);
+  background: -o-linear-gradient(top, #7373ff, #b5bbdf);
+}
+#footer {
+  background-color: #1a82f7; /* fallback */
+  background: -webkit-linear-gradient(top, #b5bbdf, #7373ff);
+  background: -moz-linear-gradient(top, #b5bbdf, #7373ff);
+  background: -ms-linear-gradient(top, #b5bbdf, #7373ff);
+  background: -o-linear-gradient(top, #b5bbdf, #7373ff);
+}
