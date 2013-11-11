@@ -3,7 +3,7 @@ memorygame
 
 A simple HTML5 memory game using CSS3 animations
 
-This game is a result of a test exercise. The parameters were as follows:
+This game is a result of a test exercise. It took me 2 hours to complete this project. The parameters were as follows:
 
 
 Let’s make a game!  Your time is valuable so let’s make it a simple game.   For this exercise a game of Memory should do.  So let’s get started!
@@ -15,6 +15,3 @@ Let’s make a game!  Your time is valuable so let’s make it a simple game.   
 * Step 3: Create your game engine! Arrange the cards in a 4x4 grid face down.  When a card is selected it should smoothly flip around to reveal the face of the card. The game is over once the player has matched all of the cards.
 
 * Step 4: During the game you will need to display a game timer with the time that has passed and the number of failed attempts. 
-
-
-Time to complete project: 2 hours.
